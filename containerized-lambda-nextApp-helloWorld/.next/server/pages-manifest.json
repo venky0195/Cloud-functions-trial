@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/api/revalidate": "pages/api/revalidate.js",
+  "/api/testHtml": "pages/api/testHtml.js",
+  "/": "pages/index.html",
+  "/isr/[id]": "pages/isr/[id].js",
+  "/using-ssr": "pages/using-ssr.js",
+  "/404": "pages/404.html"
+}

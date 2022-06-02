@@ -1,0 +1,20 @@
+service: containerized-lambda-nextApp-helloWorld
+frameworkVersion: '2'
+plugins:
+    - serverless-offline
+provider:
+  name: aws
+  profile: serverless-profile
+  lambdaHashingVersion: 20201221
+  ecr:
+    images:
+      appimage:
+        path: ./
+functions:
+  containerized-next-hello:
+    image:
+      name: appimage
+    events:
+        - httpApi:
+            path: /{proxy+}
+            method: '*'
